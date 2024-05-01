@@ -4,6 +4,6 @@ body, html {
     margin: 0px;
     background-color: #3B3B3B;
     color: whitesmoke;
-    overflow: hidden;
+    /* overflow: hidden; */
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

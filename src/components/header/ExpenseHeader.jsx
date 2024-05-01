@@ -5,7 +5,7 @@ import BalanceModal from "./BalanceModal";
 import ExpenseModal from "./ExpenseModal";
 import { PieChart } from "@mui/x-charts/PieChart";
 
-function ExpenseHeader() {
+function ExpenseHeader({reload}) {
   const [balanceModal, setBalanceModal] = React.useState(false);
   const [expanseModal, setExpanseModal] = useState(false);
   const [data, setData] = useState({
@@ -49,6 +49,7 @@ function ExpenseHeader() {
     }
     updateExpenses();
     loadPiData();
+    reload(prv => prv + 1);
   }, [expanseModal]);
 
 
@@ -72,7 +73,7 @@ function ExpenseHeader() {
         <div>
           {piData.length ? (
             <PieChart
-              width={350}
+              width={450}
               height={200}
               series={[{ data: [...piData] }]}
             ></PieChart>

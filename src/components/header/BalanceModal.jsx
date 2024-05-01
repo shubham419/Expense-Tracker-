@@ -17,12 +17,12 @@ function BalanceModal({ open, onClose }) {
       <Modal open={open} onClose={onClose}>
         <div className={styles.balanceModal}>
           <h3>Add Balance</h3>
-          <TextField
+          <input
             label="Balance"
             type="number"
+            placeholder="Balance"
             onChange={(e) => setBalance(e.target.value)}
             value={balance}
-            variant="standard"
           />
           <Button
             variant="contained"

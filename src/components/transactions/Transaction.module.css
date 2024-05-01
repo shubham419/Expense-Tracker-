@@ -1,3 +1,30 @@
 .table {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    color: rgb(65, 62, 62);
+    padding: 5px;
+    margin: 10px;
+    /* width: 60%; */
 
+    & div {
+        margin: auto;
+    }
+}
+
+.tableCell {
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    /* margin: 5px; */
+    margin-bottom: 0px;
+    & div {
+        flex-grow: 1;
+    }
+}
+
+.divider {
+    height: 1px;
+    background-color: rgb(78, 73, 73);
 }
